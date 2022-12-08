@@ -29,11 +29,10 @@ const color5 = 0x0ead69;
 const numOfCubes = 1000;
 
 for (let i = 0; i < numOfCubes; i++) {
-  const geometry = new THREE.BoxBufferGeometry(10, 10, 10);
+  const geometry = new THREE.BoxGeometry(10, 10, 10);
 
   let cubeColor;
   const randomNumber = Math.floor(Math.random() * 4 + 1);
-  console.log(randomNumber)
   switch (randomNumber) {
     case 1:
       cubeColor = color1;

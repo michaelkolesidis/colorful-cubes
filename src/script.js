@@ -27,10 +27,9 @@ const color5 = 0x0ead69;
  */
 // Math.floor(Math.random() * (max - min) + min)
 const numOfCubes = 1000;
+const geometry = new THREE.BoxGeometry(10, 10, 10);
 
 for (let i = 0; i < numOfCubes; i++) {
-  const geometry = new THREE.BoxGeometry(10, 10, 10);
-
   let cubeColor;
   const randomNumber = Math.floor(Math.random() * 4 + 1);
   switch (randomNumber) {
